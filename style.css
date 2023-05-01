@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f7fb;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container, .lines{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot{
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 3px solid rgb(227, 226, 226);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: rgb(139, 139, 139);
+}
+
+.line{
+    width: 8rem;
+    background-color: rgb(227, 226, 226);
+    height: .2rem;
+}
+
+.button{
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(227, 226, 226);
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.next{
+    background-color: rgb(14, 162, 211);
+}
+
+.next:active{
+    transform: scale(0.98);
+}
+
+.active{
+    border-color: rgb(14, 162, 211);
+}
+
+.lines{
+    position: relative;
+}
+
+.progress{
+    background-color: rgb(14, 162, 211);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0rem;
+    transition: width .3s;
+}
